@@ -22,7 +22,6 @@ class qPair{
     
 }
 
-
 public class treeMaxWidth {
     static int maxWidth(TreeNode root)
     {
@@ -43,7 +42,7 @@ public class treeMaxWidth {
             {
                 int idxctr = qpr.peek().idx - mmin;
                 TreeNode tNode = qpr.peek().node;
-                qPair qnode = qpr.poll();
+                qpr.poll();
 
                 if( i == 0 )
                     first = idxctr;

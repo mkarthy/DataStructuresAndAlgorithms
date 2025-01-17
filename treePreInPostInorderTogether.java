@@ -1,7 +1,7 @@
 /*
  * All type of Tree traversals in single traversal of tree using single stack
  * Pre, In and Post order is fetched by traversing the tree with count of every fetch
- * store the node first in stack with count of 1 and then increment it by 1 until it gets 3
+ * store the node first in stack with count of "1" and then increment it by 1 until it gets 3
  * 
  * when the count is 1 it will go in to Preorder
  * When 2 it goes in Inorder
@@ -49,7 +49,7 @@
          List<Integer> post = new ArrayList<>();
  
          if (root == null)
-         return result;
+            return result;
  
          Stack<pairVal> stck = new Stack<>();
          
