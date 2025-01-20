@@ -21,6 +21,9 @@ class TreeNode{
 
 class qNode{
     TreeNode node;
+    int vertLevel;
+    int horiLevel;
+    
     public TreeNode getNode() {
         return node;
     }
@@ -44,9 +47,6 @@ class qNode{
     public void setHoriLevel(int horiLevel) {
         this.horiLevel = horiLevel;
     }
-
-    int vertLevel;
-    int horiLevel;
     
     public qNode(TreeNode node, int vertLevel, int horiLevel) {
         this.node = node;
