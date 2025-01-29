@@ -1,5 +1,4 @@
 
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class streamsStringReverse {
@@ -13,12 +12,19 @@ public class streamsStringReverse {
                             .collect(Collectors.joining());
 
               OR
-        */
+        
         String revString = IntStream.rangeClosed(1, input.length())
                             .mapToObj(i -> input.charAt(input.length() - i))
                             .map(String::valueOf)
                             .collect(Collectors.joining());
+        */
+        IntStream.rangeClosed(1, input.length())
+                        .mapToObj(i -> input.charAt(input.length() - i))
+                        .map(String::valueOf)
+                        .forEach(System.out::print);
 
-        System.out.println("reversed String :" + revString);
+        System.out.println("");
+
+        //System.out.println("reversed String :" + revString);
     }
 }
