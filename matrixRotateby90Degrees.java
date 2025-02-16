@@ -19,6 +19,7 @@ public class matrixRotateby90Degrees {
             for( int j = 0; j < cols; j++)
             {
                 res[j][rows - i -1] = matarr[i][j];
+                //res[cols-j-1][i] = matarr[i][j]; //this logic for anticlockwise 90degree rotate 
             }
         }
     }
